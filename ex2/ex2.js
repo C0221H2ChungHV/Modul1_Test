@@ -4,11 +4,11 @@ function tryRemoveFromArray(arr,x) {
       return arr;
     } else {
       let j = arr.indexOf(x);
-      let removeArr = arr.splice(j,1);
+      arr.splice(j,1);
     }
   }
 }
-let arrayTest = [1,2,3,4,5,6,1,3];
-let x = 9;
+let arrayTest = [1,1,2,3,3,4,5,6,1];
+let x = 1;
 document.write(tryRemoveFromArray(arrayTest,x));
 
